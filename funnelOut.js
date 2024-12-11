@@ -1,5 +1,11 @@
 function funnelOut(funnel){
- return "q"
+  //    \b, c/
+  //      \a/
+  // let the a fall down
+
+ const funneledLetters = []
+
+ 
 }
 
 module.exports = funnelOut
