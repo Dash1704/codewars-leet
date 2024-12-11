@@ -7,19 +7,21 @@ function countDeafRats(town){
   
   let count = 0
 
-  beforeAndAfterP[0].match(/.{1,2}/g).forEach((element) => {
-    if(element === "O~"){
-      count++
-    }
-    return;
-  })
+  if(beforeAndAfterP[0]){
+    beforeAndAfterP[0].match(/.{1,2}/g).forEach((element) => {
+      if(element === "O~"){
+        count++
+      }
+    })
+  }
 
-  beforeAndAfterP[1].match(/.{1,2}/g).forEach((element) => {
-    if(element === "~O"){
-      count++
-    }
-    return;
-  })
+  if(beforeAndAfterP[1]){
+    beforeAndAfterP[1].match(/.{1,2}/g).forEach((element) => {
+      if(element === "~O" && element !== null){
+        count++
+      }
+    })
+  }
 
   return count
 }
