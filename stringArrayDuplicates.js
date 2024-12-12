@@ -12,6 +12,8 @@ function noDuplicates(string){
     
   })
   return newArray
+
+  //return string.map(word => word.split('').filter( (letter, index) => letter !== word[index + 1]).join(''))
 }
 
 module.exports = noDuplicates;
