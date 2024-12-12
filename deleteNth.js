@@ -9,14 +9,19 @@ function deleteNth(arr, n){
   // }
 
 
-  arr.map((element) => {
-    count[element] = (count[element] || 0) + 1
-    if (count[element] <= n) {
-      result.push(element);
-    }
-  })
+  // arr.map((element) => {
+  //   count[element] = (count[element] || 0) + 1
+  //   if (count[element] <= n) {
+  //     result.push(element);
+  //   }
+  // })
 
-  return result
+  // return result
+
+
+
+  //even smoother way
+  return arr.filter( value => (count[value] = count[value] +1 || 1) <= n );
 }
 
 
