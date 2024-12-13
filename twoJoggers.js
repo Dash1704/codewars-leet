@@ -1,5 +1,21 @@
-function twoJoggers(x, y){
-  return [3, 5]
+function twoJoggers(joggerOne, joggerTwo){
+  joggerLapArray = []
+  joggerLapArray.push(joggerOne, joggerTwo)
+  const multiplyResult = joggerOne * joggerTwo
+
+  const newArray = []
+
+  joggerLapArray.map((number) => {
+    newArray.push(multiplyResult / number)
+  })
+
+  while(newArray[0] % 2 === 0 && newArray[1] % 2 === 0){
+    for(let i = 0; i < newArray.length; i++){
+      newArray[i] = newArray[i] / 2
+    }
+  }
+
+  return newArray
 }
 
 module.exports = twoJoggers;
