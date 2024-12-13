@@ -1,11 +1,10 @@
 function twoJoggers(joggerOne, joggerTwo){
-  joggerLapArray = []
-  joggerLapArray.push(joggerOne, joggerTwo)
+  joggerLapArray = [joggerOne, joggerTwo]
 
   if(joggerLapArray[0] === joggerLapArray[1]){
     return [1, 1]
   }
-  
+
   const multiplyResult = joggerOne * joggerTwo
 
   const newArray = []
