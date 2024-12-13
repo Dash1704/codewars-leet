@@ -7,3 +7,8 @@ test('it should find when the joggers meet again', () => {
 test('it should find when the joggers meet again', () => {
   expect(twoJoggers(4, 6)).toEqual([3, 2])
 })
+
+
+test('it should find when the joggers meet again', () => {
+  expect(twoJoggers(5, 5)).toEqual([1, 1])
+})
