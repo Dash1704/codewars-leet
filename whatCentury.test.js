@@ -16,5 +16,9 @@ test('it should say what century the year is in', () => {
   expect(whatCentury("2259")).toEqual("23rd")
 })
 
+test('it should say what century the year is in', () => {
+  expect(whatCentury("1234")).toEqual("13th")
+})
+
 
 
