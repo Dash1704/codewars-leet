@@ -1,9 +1,8 @@
-function mormons(startingNumber, reach, target){
+function mormons(mormons, reach, target){
   let missions = 0
-  let followers = startingNumber
 
-  while(followers < target){
-    followers += followers * reach
+  while(mormons < target){
+    mormons += mormons * reach
     missions++
   }
 
