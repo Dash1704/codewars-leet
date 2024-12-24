@@ -14,6 +14,4 @@ function ranks(array){
   return array.map(num => rankMap[num])
 }
 
-
-
 module.exports = ranks;
