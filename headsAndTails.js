@@ -4,11 +4,9 @@ function coin(n) {
   const smallerFlips = coin(n - 1); 
   const result = [];
 
-  for (const flip of smallerFlips) {
-    
+  for (const flip of smallerFlips) {    
     result.push(flip + "H"); 
     result.push(flip + "T"); 
-    console.log(flip)
   }
 
   return result;
