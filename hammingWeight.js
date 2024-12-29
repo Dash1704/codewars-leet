@@ -28,7 +28,7 @@ function hammingWeight(number){
       count++
     }
   }
-
+  console.log(binaryArray.reverse().join(""))
   return count
 }
 
