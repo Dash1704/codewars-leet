@@ -3,7 +3,7 @@ function columnIndex(index, character){
 
   for(let i = 0; i < column.length; i++){
     if(i == index){
-      column[i] += character.trim()
+      column[i] += character
     }
   }
 
