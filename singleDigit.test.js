@@ -5,5 +5,9 @@ test('it should return a single digit after adding the sum of its binary form', 
 })
 
 test('it should return a single digit after adding the sum of its binary form', () => {
-  expect(singleDigit(9)).toEqual(8)
+  expect(singleDigit(999)).toEqual(8)
+})
+
+test('it should return a single digit after adding the sum of its binary form', () => {
+  expect(singleDigit(123456789)).toEqual(1)
 })
